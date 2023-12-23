@@ -1,0 +1,71 @@
+.title {
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.settings-card {
+  background-color: white;
+  color: #ca353e;
+  height: 70px;
+  width: 90vw;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.settings-card label {
+  display: flex;
+  font-family: "Lilita One", sans-serif;
+  padding-right: 12px;
+  font-size: 1.75rem;
+}
+
+.settings-card input {
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #ca353e;
+}
+
+.container-checkbox {
+  margin-top: 2rem;
+}
+
+.container-setting {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.button-container-setting {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 209px;
+  height: 200px;
+}
+.background-svg-setting {
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.next-button-setting {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: none;
+  background: none;
+  color: #ca353e;
+  font-size: 24px;
+}

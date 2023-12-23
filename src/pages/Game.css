@@ -1,0 +1,89 @@
+.title {
+  color: white;
+}
+
+.card::before {
+  content: url(/src/assets/lutin-Assis.svg);
+  position: absolute;
+  top: -45px;
+  left: -26px;
+}
+.card {
+  background-color: white;
+  color: #ca353e;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+  width: 100%;
+  position: relative;
+}
+
+.card::after {
+  content: url(/src/assets/lutinEchelle.svg);
+  position: absolute;
+  top: -148px;
+  right: -15px;
+}
+
+.container-game {
+  margin: 14vh 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+}
+
+.show-button {
+  display: block;
+  border: 2px solid #ca353e;
+  border-radius: 10px;
+  background: none;
+  padding: 4px;
+  color: #ca353e;
+}
+
+.solution {
+  margin: 10px 0;
+}
+.rodolf-game {
+  width: 100px;
+}
+.title-game {
+  font-size: 4vh;
+  position: relative;
+}
+.light-text {
+  font-family: "lato", sans-serif;
+}
+
+/*-------BOUTON NEXT BLAGUE-------*/
+.button-container {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 209px;
+  height: 200px;
+}
+
+.background-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: none;
+  background: none;
+  color: #ca353e;
+  font-size: 24px;
+}

@@ -1,42 +1,155 @@
-#root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-image: url(../src/assets/background.svg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+}
+
+.logo img {
+  height: 100%;
+  max-width: 6rem;
+  color: white;
+}
+
+.returnhome {
+  height: 100%;
+  max-width: 80px;
+  background-color: none;
+}
+
+.containerNav {
+  padding: 15px 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.howButton {
+  background-color: #ffffff;
+    color: #ca353e;
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    border: 0;
+    font-size: 2.5vh;
+    font-family: "Lilita One", sans-serif;
+    width: 70%;
+    display: block;
+    text-align: center;
+    margin-top: 8vh;
+}
+.popup-card {
+  background-color: #ffffff;
+  color: #ca353e;
+  font-size: 8px;
+  font-family: "Lilita One", sans-serif;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.popup-card p {
+  padding: 20px;
+    font-size: 2vh;
+    text-align: justify;
+    line-height: 3vh;
+    font-family: "Lato", sans-serif;
+}
+.popup-card h1 {
+  padding-top: 10px;
+    font-size: 3vh;
+}
+.popup-container {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.close-button {
+  font-family: "Lilita One", sans-serif;
+    background-color: white;
+    color: #ca353e;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #ca353e;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.newgamebutton {
+  background-color: #ffffff;
+  color: #ca353e;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0;
+  font-size: 3.5vh;
+  font-family: "Lilita One", sans-serif;
+  width: 80%;
+  display: block;
   text-align: center;
+  margin-top: 5vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.rodolf {
+  width: 40vh;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -2vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titreHomePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 27px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logoHomepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.logoHomepage h1 {
+  color: white;
+  align-items: center;
+  display: inline;
 }
 
-.read-the-docs {
-  color: #888;
+.logoHomepage img {
+  height: 17vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+h2 {
+  font-family: "Lilita One", sans-serif;
 }
