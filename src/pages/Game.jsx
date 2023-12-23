@@ -5,9 +5,11 @@ import buttonImage from "../assets/nextButton.svg";
 import NavBar from "../components/NavBar";
 import { useOutletContext } from "react-router-dom";
 import rodolf from "../assets/rodolf.svg";
-import blague from "../data/blague"
-import enigme from "../data/enigme"
-import jeu from "../data/jeu"
+import blague from "../data/blague.json";
+import enigme from "../data/enigme.json";
+import jeu from "../data/jeu.json";
+
+const gameData = { blague, enigme, jeu };
 
 const Game = () => {
   const [
@@ -45,7 +47,7 @@ const Game = () => {
     setShowSolution(false);
   };
 
-  const fetchData = async (category) => {
+  /* const fetchData = async (category) => {
     try {
       const response = await fetch("http://localhost:8000/api/" + category);
       if (!response.ok) {
@@ -59,8 +61,13 @@ const Game = () => {
         error.message
       );
     }
+  }; */
+
+  const fetchData = (category) => {
+    const randomNb = Math.floor(Math.random() * category.length);
+    setData(gameData[category][randomNb]);
   };
-  
+
   const randomCategory =
     categories[Math.floor(Math.random() * categories.length)];
   useEffect(() => {
