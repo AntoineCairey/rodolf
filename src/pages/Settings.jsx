@@ -40,7 +40,6 @@ const Settings = () => {
                 onChange={handleJokes}
               />
               Blagues
-              {console.log(`${jokesChecked} Jokes`)}
             </label>
           </form>
         </div>
@@ -53,7 +52,6 @@ const Settings = () => {
                 onChange={handleGames}
               />
               Jeux
-              {console.log(`${gamesChecked} Games`)}
             </label>
           </form>
         </div>
@@ -66,7 +64,6 @@ const Settings = () => {
                 onChange={handleRiddles}
               />
               Énigmes
-              {console.log(`${riddlesChecked} Riddles`)}
             </label>
           </form>
         </div>

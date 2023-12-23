@@ -64,7 +64,7 @@ const Game = () => {
   }; */
 
   const fetchData = (category) => {
-    const randomNb = Math.floor(Math.random() * category.length);
+    const randomNb = Math.floor(Math.random() * gameData[category].length);
     setData(gameData[category][randomNb]);
   };
 
