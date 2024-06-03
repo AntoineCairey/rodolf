@@ -1,8 +1,7 @@
-# React + Vite
+# Rodolf
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project created during a 2-day holiday-themed hackathon.
+It's a game you can play with your family at the dinner table, including jokes, challenges and puzzles.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app is frontend-only, built with React.
+The data displayed in the game is retrieved from a JSON file.
